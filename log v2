@@ -4,7 +4,7 @@ local players
 
 if game.Workspace:FindFirstChild("Players") then
 	
-	return
+	
 
 else
 
