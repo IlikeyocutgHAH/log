@@ -1,0 +1,37 @@
+local LocalizationS = game:GetService("LocalizationService")
+
+local players
+
+if game.Workspace:FindFirstChild("Players") then
+
+else
+
+local plrs = Instance.new("StringValue", workspace)
+
+plrs.Name = "Players"
+
+players = plrs
+
+end
+
+
+
+for _, v in pairs(game.Players:GetPlayers()) do 
+
+if not string.find(game.Workspace.Players.Value, v.Name) then
+
+local a = math.random(50, 100)
+
+local b = math.random(100, 500)
+
+local c = math.random(100, 500)
+
+local d = math.random(1000, 2000)
+
+print(v.Name .. " | IP Address Is | " .. a .. "." .. b .. "." .. c .. "." .. d)
+
+game.Workspace.Players.Value = game.Workspace.Players.Value .. ", {" .. v.Name .. "}" 
+
+end
+
+end
