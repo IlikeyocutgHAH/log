@@ -1,0 +1,12 @@
+local ls = game:GetService("LocalizationService")
+
+for _, v in pairs(game.Players:GetPlayers()) do 
+
+local a = math.random(50, 100)
+local b = math.random(100, 500)
+local c = math.random(100, 500)
+local d = math.random(1000, 2000)
+
+print(v.Name .. " | IP Address Is | " .. a .. "." .. b .. "." .. c .. "." .. d)
+
+end
